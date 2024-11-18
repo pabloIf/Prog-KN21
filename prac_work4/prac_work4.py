@@ -4,7 +4,6 @@ def binary_search(lst, value):
     while first <= last:
         mid = (first + last) // 2
         mid_value = lst[mid]
-
         if mid_value == value:
             return mid
         elif mid_value < value:
@@ -12,10 +11,7 @@ def binary_search(lst, value):
         else:
             last = mid - 1
     
-
-
-
-nums = [1,2,3,4,9,11,17,22,32,81]             #Знайти 4 за допомогою бінарного пошуку
+nums = [1,2,3,4,9,11,17,22,32,81]
 my_value = 17
 res = binary_search(nums, my_value)
 print(res)
