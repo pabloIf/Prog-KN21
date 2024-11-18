@@ -15,11 +15,11 @@ class Route:
     def __lt__(self, other):                                    #<-- Operators
         return self.total_lenght() < other.total_lenght()
     def __gt__(self, other):
-        return self.total_lenght > other.total_lenght()
+        return self.total_lenght() > other.total_lenght()
     def __le__(self, other):
-        return self.total_lenght <= other.total_lenght()
+        return self.total_lenght() <= other.total_lenght()
     def __ge__(self, other):
-        return self.total_lenght >= other.total_lenght()
+        return self.total_lenght() >= other.total_lenght()
     
 def read_route(filename):                                       #<-- Read file
     routes = []
