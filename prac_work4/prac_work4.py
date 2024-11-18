@@ -12,7 +12,7 @@ def binary_search(lst, value):
             last = mid - 1
     
 nums = [1,2,3,4,9,11,17,22,32,81]
-my_value = 17
+my_value = int(input())
 res = binary_search(nums, my_value)
 print(res)
 
